@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f3ea;
+  --panel: #fffdf8;
+  --ink: #1d1b16;
+  --muted: #6b655b;
+  --line: #d9d0bf;
+  --accent: #b25c2f;
+  --accent-ink: #fff8f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(178, 92, 47, 0.12), transparent 28%),
+    linear-gradient(180deg, #f8f4ec 0%, var(--bg) 100%);
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+.hero {
+  padding: 32px 0 20px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 72px);
+}
+
+h2 {
+  font-size: 28px;
+  margin-top: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-top: 24px;
+}
+
+p,
+li {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.lede {
+  max-width: 720px;
+  color: var(--muted);
+}
+
+.meta {
+  color: var(--muted);
+  margin-top: -4px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 28px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(29, 27, 22, 0.05);
+}
+
+.button,
+.back-link {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 999px;
+}
+
+.button {
+  margin-top: 8px;
+  padding: 12px 16px;
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.back-link {
+  margin-bottom: 16px;
+  color: var(--muted);
+}
+
+.legal {
+  max-width: 820px;
+}
+
+section {
+  margin-top: 18px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 36px 0;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding-top: 28px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+}
